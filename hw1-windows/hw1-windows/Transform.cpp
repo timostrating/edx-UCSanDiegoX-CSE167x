@@ -1,5 +1,5 @@
 // Transform.cpp: implementation of the Transform class.
-
+#include <iostream>
 #include "Transform.h"
 
 //Please implement the following functions:
@@ -14,7 +14,9 @@ mat3 Transform::rotate(const float degrees, const vec3& axis) {
 
 // Transforms the camera left around the "crystal ball" interface
 void Transform::left(float degrees, vec3& eye, vec3& up) {
-  // YOUR CODE FOR HW1 HERE
+	std::cout << "LEFT";
+
+	eye = vec3(1.0, 2.0, 1.0);
 }
 
 // Transforms the camera up around the "crystal ball" interface
